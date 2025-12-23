@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class ArrayCommand | mysite ">
       
-      
+      <meta name="description" content="The ArrayCommand class is implemented to handle the creation and initialization of arrays. Support is provided for both integer and real number arrays, including single and multi-dimensional definitions.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSEInterpreter_ArrayCommand" data-uid="BOOSEInterpreter.ArrayCommand" class="text-break">
-Class ArrayCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/ArrayCommand.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class ArrayCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/ArrayCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class ArrayCommand  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>BOOSEapp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The ArrayCommand class is implemented to handle the creation and initialization of arrays.
+Support is provided for both integer and real number arrays, including single and multi-dimensional definitions.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -162,10 +164,12 @@ Class ArrayCommand  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="BOOSEInterpreter_ArrayCommand_Execute_BOOSEInterpreter_DrawingCanvas_System_Collections_Generic_Dictionary_System_String_System_Object__System_String___" data-uid="BOOSEInterpreter.ArrayCommand.Execute(BOOSEInterpreter.DrawingCanvas,System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])">
   Execute(DrawingCanvas, Dictionary&lt;string, object&gt;, string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/ArrayCommand.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/ArrayCommand.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The array command is executed to parse the provided arguments and instantiate the requested array.
+The resulting array object is stored within the shared variables dictionary for subsequent access.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,11 +179,14 @@ Class ArrayCommand  <a class="header-action link-secondary" title="View source" 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <a class="xref" href="BOOSEInterpreter.DrawingCanvas.html">DrawingCanvas</a></dt>
-    <dd></dd>
+    <dd><p>The drawing canvas is passed to the method but is not utilized for array creation.</p>
+</dd>
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The global variable storage is accessed to store the newly created array instance.</p>
+</dd>
     <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
+    <dd><p>The command arguments are processed to determine the array type, name, and dimensions.</p>
+</dd>
   </dl>
 
 
@@ -190,6 +197,12 @@ Class ArrayCommand  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEInterpreter.BOOSEException.html">BOOSEException</a></dt>
+    <dd><p>An exception is thrown if the argument count is insufficient or if an unsupported array type is specified.</p>
+</dd>
+  </dl>
 
 
 
@@ -197,7 +210,7 @@ Class ArrayCommand  <a class="header-action link-secondary" title="View source" 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/ArrayCommand.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/ArrayCommand.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

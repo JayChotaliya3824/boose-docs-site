@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CommandFactory | mysite ">
       
-      <meta name="description" content="Uses the Factory and Singleton patterns to create ICommand objects.">
+      <meta name="description" content="The CommandFactory class is implemented to manage the creation and retrieval of command objects. The Factory design pattern is utilized to instantiate commands based on string identifiers, ensuring a decoupled architecture. The Singleton pattern is applied to ensure a single instance of the factory manages command generation throughout the application lifecycle.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSEInterpreter_CommandFactory" data-uid="BOOSEInterpreter.CommandFactory" class="text-break">
-Class CommandFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class CommandFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class CommandFactory  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>BOOSEapp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Uses the Factory and Singleton patterns to create ICommand objects.</p>
+  <div class="markdown summary"><p>The CommandFactory class is implemented to manage the creation and retrieval of command objects.
+The Factory design pattern is utilized to instantiate commands based on string identifiers, ensuring a decoupled architecture.
+The Singleton pattern is applied to ensure a single instance of the factory manages command generation throughout the application lifecycle.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -157,10 +159,11 @@ Class CommandFactory  <a class="header-action link-secondary" title="View source
 
   <h3 id="BOOSEInterpreter_CommandFactory_GetCommand_System_String_" data-uid="BOOSEInterpreter.CommandFactory.GetCommand(System.String)">
   GetCommand(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Factory method to get a command object.</p>
+  <div class="markdown level1 summary"><p>The command corresponding to the specified name is retrieved.
+This method serves as a wrapper for the MakeCommand method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -171,45 +174,15 @@ Class CommandFactory  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>commandName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name of the command to retrieve.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="BOOSEInterpreter.ICommand.html">ICommand</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BOOSEInterpreter_CommandFactory_GetParser_" data-uid="BOOSEInterpreter.CommandFactory.GetParser*"></a>
-
-  <h3 id="BOOSEInterpreter_CommandFactory_GetParser" data-uid="BOOSEInterpreter.CommandFactory.GetParser">
-  GetParser()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L78"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gives commands access to parser functions like EvaluateExpression().</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Parser GetParser()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BOOSEInterpreter.Parser.html">Parser</a></dt>
-    <dd></dd>
+    <dd><p>The requested ICommand object is returned.</p>
+</dd>
   </dl>
 
 
@@ -226,10 +199,11 @@ Class CommandFactory  <a class="header-action link-secondary" title="View source
 
   <h3 id="BOOSEInterpreter_CommandFactory_HasCommand_System_String_" data-uid="BOOSEInterpreter.CommandFactory.HasCommand(System.String)">
   HasCommand(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks are performed to determine if a command with the specified name exists within the factory.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -239,13 +213,15 @@ Class CommandFactory  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>commandName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The name of the command to verify.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>True is returned if the command exists; otherwise, false is returned.</p>
+</dd>
   </dl>
 
 
@@ -262,10 +238,12 @@ Class CommandFactory  <a class="header-action link-secondary" title="View source
 
   <h3 id="BOOSEInterpreter_CommandFactory_Instance_BOOSEInterpreter_Parser_" data-uid="BOOSEInterpreter.CommandFactory.Instance(BOOSEInterpreter.Parser)">
   Instance(Parser)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The singleton instance of the CommandFactory is retrieved.
+If the instance does not exist, it is created in a thread-safe manner.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -275,13 +253,15 @@ Class CommandFactory  <a class="header-action link-secondary" title="View source
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parser</code> <a class="xref" href="BOOSEInterpreter.Parser.html">Parser</a></dt>
-    <dd></dd>
+    <dd><p>The parser instance is provided to facilitate command initialization where necessary.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="BOOSEInterpreter.CommandFactory.html">CommandFactory</a></dt>
-    <dd></dd>
+    <dd><p>The unique instance of the CommandFactory is returned.</p>
+</dd>
   </dl>
 
 
@@ -291,6 +271,52 @@ Class CommandFactory  <a class="header-action link-secondary" title="View source
 
 
 
+
+
+
+  <a id="BOOSEInterpreter_CommandFactory_MakeCommand_" data-uid="BOOSEInterpreter.CommandFactory.MakeCommand*"></a>
+
+  <h3 id="BOOSEInterpreter_CommandFactory_MakeCommand_System_String_" data-uid="BOOSEInterpreter.CommandFactory.MakeCommand(System.String)">
+  MakeCommand(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A command object is instantiated based on the provided command type string.
+The command string is normalized, and the corresponding command object is retrieved from the registry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommand MakeCommand(string commandType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>commandType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string identifier for the requested command type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEInterpreter.ICommand.html">ICommand</a></dt>
+    <dd><p>The ICommand implementation corresponding to the specified type is returned.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEInterpreter.BOOSEException.html">BOOSEException</a></dt>
+    <dd><p>An exception is thrown if the requested command type is not recognized by the factory.</p>
+</dd>
+  </dl>
 
 
 
@@ -298,7 +324,7 @@ Class CommandFactory  <a class="header-action link-secondary" title="View source
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CommandFactory.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

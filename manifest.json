@@ -1,5 +1,5 @@
 {
-  "source_base_path": "C:/Users/User/source/repos/ase-boose-assignment-JayChotaliya3824/BOOSEapp",
+  "source_base_path": "D:/Work/ase-boose-assignment-JayChotaliya3824/BOOSEapp",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -22,7 +22,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.ArrayCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.ArrayCommand.yml\" sourcestartlinenumber=\"1\">The ArrayCommand class is implemented to handle the creation and initialization of arrays.\nSupport is provided for both integer and real number arrays, including single and multi-dimensional definitions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.BOOSEException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.BOOSEException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.BOOSEException",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.BOOSEException.yml\" sourcestartlinenumber=\"1\">The BOOSEException class is implemented to handle application-specific errors within the BOOSE Interpreter.\nIt is derived from the standard Exception class to provide custom error messages and handling.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -36,7 +50,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.BaseCommand",
-      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.BaseCommand.yml\" sourcestartlinenumber=\"1\">A base class to share the evaluator and helper methods.</p>\n"
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.BaseCommand.yml\" sourcestartlinenumber=\"1\">The BaseCommand abstract class is implemented to provide shared functionality across specific command implementations.\nA common expression evaluator and helper methods are exposed to derived classes to facilitate argument processing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.BooleanCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.BooleanCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.BooleanCommand",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.BooleanCommand.yml\" sourcestartlinenumber=\"1\">The BooleanCommand class is implemented to facilitate the creation and assignment of boolean variables.\nLogical expressions are evaluated, and the resulting truth values are stored within the application state for later use.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -50,7 +78,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.CallCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.CallCommand.yml\" sourcestartlinenumber=\"1\">The CallCommand class is implemented to facilitate the invocation of user-defined methods.\nParameters are parsed, evaluated, and passed to the method body for execution within a local variable scope.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.CastCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.CastCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.CastCommand",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.CastCommand.yml\" sourcestartlinenumber=\"1\">The CastCommand class is implemented to handle variable type casting.\nReal number values are converted into integers and stored in destination variables.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -64,7 +106,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.CircleCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.CircleCommand.yml\" sourcestartlinenumber=\"1\">The CircleCommand class is implemented to facilitate the drawing of circles on the canvas.\nThe radius expression is evaluated, and the corresponding drawing operation is invoked.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -78,7 +120,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.CommandFactory",
-      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.CommandFactory.yml\" sourcestartlinenumber=\"1\">Uses the Factory and Singleton patterns to create ICommand objects.</p>\n"
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.CommandFactory.yml\" sourcestartlinenumber=\"1\">The CommandFactory class is implemented to manage the creation and retrieval of command objects.\nThe Factory design pattern is utilized to instantiate commands based on string identifiers, ensuring a decoupled architecture.\nThe Singleton pattern is applied to ensure a single instance of the factory manages command generation throughout the application lifecycle.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -92,7 +134,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.CommandHelper",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.CommandHelper.yml\" sourcestartlinenumber=\"1\">The CommandHelper class is implemented to provide utility methods for command execution.\nCommon operations such as argument evaluation are centralized to ensure consistency and reduce code duplication.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.ControlFlow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.ControlFlow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.ControlFlow",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.ControlFlow.yml\" sourcestartlinenumber=\"1\">The ControlFlow abstract class is defined to serve as a base for all flow control structures.\nThe starting line index of the control block is stored.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -106,7 +162,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.DrawToCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.DrawToCommand.yml\" sourcestartlinenumber=\"1\">The DrawToCommand class is implemented to handle drawing lines to specific coordinates.\nThe pen is moved from its current position to the specified target coordinates, creating a line on the canvas.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -120,7 +176,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.DrawingCanvas",
-      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.DrawingCanvas.yml\" sourcestartlinenumber=\"1\">This class manages the drawing state and operations on a PictureBox.</p>\n"
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.DrawingCanvas.yml\" sourcestartlinenumber=\"1\">The DrawingCanvas class is used to perform drawing operations on a bitmap surface.\nIt extends the functionality of the BOOSE.Canvas class to support specific shapes and text rendering using GDI+.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -134,7 +190,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.ExpressionEvaluator",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.ExpressionEvaluator.yml\" sourcestartlinenumber=\"1\">The ExpressionEvaluator class is implemented to process and evaluate mathematical and logical expressions.\nA DataTable is utilized for numerical computation, and custom logic is applied for string operations and boolean comparisons.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -148,7 +204,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.FillCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.FillCommand.yml\" sourcestartlinenumber=\"1\">The FillCommand class is implemented to control the fill state of shapes drawn on the canvas.\nThe fill status is toggled based on the provided argument, determining whether subsequent shapes are filled or outlined.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.ForControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.ForControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.ForControl",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.ForControl.yml\" sourcestartlinenumber=\"1\">The ForControl class is implemented to manage the state of 'for' loops.\nThe loop variable, start, end, and step values are maintained.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -176,7 +246,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.ICommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.ICommand.yml\" sourcestartlinenumber=\"1\">The ICommand interface is defined to establish a contract for all command implementations.\nA standardized Execute method is required, ensuring consistent execution across different command types within the interpreter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.IfControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.IfControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.IfControl",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.IfControl.yml\" sourcestartlinenumber=\"1\">The IfControl class is implemented to manage the state of 'if-else' blocks.\nThe condition and the execution status of the branch are tracked.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -190,7 +274,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.IntCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.IntCommand.yml\" sourcestartlinenumber=\"1\">The IntCommand class is implemented to facilitate the declaration and assignment of integer variables.\nFunctionality is provided to parse variable declaration syntax and evaluate initial values if supplied.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -204,7 +288,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.MethodDefinition",
-      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.MethodDefinition.yml\" sourcestartlinenumber=\"1\">A simple class to store a method's details.</p>\n"
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.MethodDefinition.yml\" sourcestartlinenumber=\"1\">The MethodDefinition class is implemented to store the structure of user-defined methods.\nInformation regarding parameters and the sequence of method body commands is maintained for execution.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -218,7 +302,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.MoveToCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.MoveToCommand.yml\" sourcestartlinenumber=\"1\">The MoveToCommand class is implemented to handle the movement of the drawing pen.\nThe pen position is updated to the specified coordinates without performing any drawing operation on the canvas.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -232,7 +316,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.Parser",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.Parser.yml\" sourcestartlinenumber=\"1\">The Parser class is implemented to process and execute BOOSE scripts.\nScript commands are analyzed line by line, flow control statements are managed, and methods are defined and invoked.\nThe parser interacts with the CommandFactory to instantiate commands and the DrawingCanvas to reflect visual outputs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.PeekCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.PeekCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.PeekCommand",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.PeekCommand.yml\" sourcestartlinenumber=\"1\">The PeekCommand class is implemented to retrieve values from arrays and store them into variables.\nSupport is provided for both one-dimensional and two-dimensional arrays of integer or real types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -246,7 +344,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.PenColourCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.PenColourCommand.yml\" sourcestartlinenumber=\"1\">The PenColourCommand class is implemented to update the pen colour used for drawing operations on the canvas.\nColours are defined using RGB values provided as parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.PokeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.PokeCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.PokeCommand",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.PokeCommand.yml\" sourcestartlinenumber=\"1\">The PokeCommand class is implemented to assign values to specific elements within arrays.\nIt supports updating values in both one-dimensional and two-dimensional arrays of integer or real types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -260,7 +372,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.RealCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.RealCommand.yml\" sourcestartlinenumber=\"1\">The RealCommand class is implemented to handle the declaration and assignment of real (floating-point) variables.\nIt provides functionality to parse variable declaration syntax and evaluate initial values if they are supplied.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -274,7 +386,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.RectangleCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.RectangleCommand.yml\" sourcestartlinenumber=\"1\">The RectangleCommand class is implemented to facilitate the drawing of rectangles on the canvas.\nIt processes width and height arguments, evaluating expressions if provided, and invokes the rectangle drawing method on the canvas.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -288,7 +400,35 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "BOOSEInterpreter.VarCommand",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.VarCommand.yml\" sourcestartlinenumber=\"1\">The VarCommand class is implemented to handle the assignment of values to existing variables.\nIt parses the assignment expression, evaluates the result, and updates the variable's value in the shared state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.WhileControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.WhileControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.WhileControl",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.WhileControl.yml\" sourcestartlinenumber=\"1\">The WhileControl class is implemented to manage the state of 'while' loops.\nThe loop condition string is stored for re-evaluation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BOOSEInterpreter.WriteCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BOOSEInterpreter.WriteCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BOOSEInterpreter.WriteCommand",
+      "Summary": "<p sourcefile=\"api/BOOSEInterpreter.WriteCommand.yml\" sourcestartlinenumber=\"1\">The WriteCommand class is implemented to display text or values on the drawing canvas.\nIt processes arguments which may include text strings, variables, or expressions, and renders the result at the current pen position.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -313,39 +453,6 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/introduction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "docs/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/toc.html"
-        },
-        ".json": {
-          "relative_path": "docs/toc.json"
         }
       },
       "version": ""

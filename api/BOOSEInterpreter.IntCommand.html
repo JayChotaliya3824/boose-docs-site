@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class IntCommand | mysite ">
       
-      
+      <meta name="description" content="The IntCommand class is implemented to facilitate the declaration and assignment of integer variables. Functionality is provided to parse variable declaration syntax and evaluate initial values if supplied.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSEInterpreter_IntCommand" data-uid="BOOSEInterpreter.IntCommand" class="text-break">
-Class IntCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/IntCommand.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Class IntCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/IntCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class IntCommand  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>BOOSEapp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The IntCommand class is implemented to facilitate the declaration and assignment of integer variables.
+Functionality is provided to parse variable declaration syntax and evaluate initial values if supplied.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -162,10 +164,13 @@ Class IntCommand  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="BOOSEInterpreter_IntCommand_Execute_BOOSEInterpreter_DrawingCanvas_System_Collections_Generic_Dictionary_System_String_System_Object__System_String___" data-uid="BOOSEInterpreter.IntCommand.Execute(BOOSEInterpreter.DrawingCanvas,System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])">
   Execute(DrawingCanvas, Dictionary&lt;string, object&gt;, string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/IntCommand.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/IntCommand.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The command is executed to declare a new integer variable.
+The argument list is validated, and if an assignment expression is present, it is evaluated and assigned to the variable.
+If no assignment is provided, the variable is initialized to zero.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,11 +180,14 @@ Class IntCommand  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <a class="xref" href="BOOSEInterpreter.DrawingCanvas.html">DrawingCanvas</a></dt>
-    <dd></dd>
+    <dd><p>The drawing canvas is passed to the method execution context.</p>
+</dd>
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The dictionary of global variables is accessed to store the new integer variable.</p>
+</dd>
     <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
+    <dd><p>The command arguments are parsed to extract the variable name and optional initialization expression.</p>
+</dd>
   </dl>
 
 
@@ -190,6 +198,12 @@ Class IntCommand  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEInterpreter.BOOSEException.html">BOOSEException</a></dt>
+    <dd><p>An exception is thrown if the syntax is invalid or if a required expression is missing.</p>
+</dd>
+  </dl>
 
 
 
@@ -197,7 +211,7 @@ Class IntCommand  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/IntCommand.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/IntCommand.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

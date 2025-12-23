@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CallCommand | mysite ">
       
-      
+      <meta name="description" content="The CallCommand class is implemented to facilitate the invocation of user-defined methods. Parameters are parsed, evaluated, and passed to the method body for execution within a local variable scope.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSEInterpreter_CallCommand" data-uid="BOOSEInterpreter.CallCommand" class="text-break">
-Class CallCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CallCommand.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class CallCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CallCommand.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class CallCommand  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>BOOSEapp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>The CallCommand class is implemented to facilitate the invocation of user-defined methods.
+Parameters are parsed, evaluated, and passed to the method body for execution within a local variable scope.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -162,10 +164,11 @@ Class CallCommand  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="BOOSEInterpreter_CallCommand__ctor_BOOSEInterpreter_Parser_" data-uid="BOOSEInterpreter.CallCommand.#ctor(BOOSEInterpreter.Parser)">
   CallCommand(Parser)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CallCommand.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CallCommand.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A new instance of the CallCommand class is initialized with a reference to the Parser.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,7 +178,8 @@ Class CallCommand  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>parser</code> <a class="xref" href="BOOSEInterpreter.Parser.html">Parser</a></dt>
-    <dd></dd>
+    <dd><p>The Parser instance is provided to allow access to method definitions and execution context.</p>
+</dd>
   </dl>
 
 
@@ -197,10 +201,13 @@ Class CallCommand  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="BOOSEInterpreter_CallCommand_Execute_BOOSEInterpreter_DrawingCanvas_System_Collections_Generic_Dictionary_System_String_System_Object__System_String___" data-uid="BOOSEInterpreter.CallCommand.Execute(BOOSEInterpreter.DrawingCanvas,System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])">
   Execute(DrawingCanvas, Dictionary&lt;string, object&gt;, string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CallCommand.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CallCommand.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The command is executed to call a specific method with the provided arguments.
+The method definition is retrieved, arguments are evaluated and mapped to parameters, and the method body is executed.
+Return values are captured and stored in the global variable scope if applicable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -210,11 +217,14 @@ Class CallCommand  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <a class="xref" href="BOOSEInterpreter.DrawingCanvas.html">DrawingCanvas</a></dt>
-    <dd></dd>
+    <dd><p>The drawing canvas is passed to the method execution context.</p>
+</dd>
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The global variable dictionary is accessed for argument evaluation and return value storage.</p>
+</dd>
     <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
+    <dd><p>The command arguments are processed to identify the method name and parameters.</p>
+</dd>
   </dl>
 
 
@@ -225,6 +235,12 @@ Class CallCommand  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEInterpreter.BOOSEException.html">BOOSEException</a></dt>
+    <dd><p>An exception is thrown if the method is not found, or if there is a mismatch in the number of arguments provided.</p>
+</dd>
+  </dl>
 
 
 
@@ -232,7 +248,7 @@ Class CallCommand  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CallCommand.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/CallCommand.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class BaseCommand | mysite ">
       
-      <meta name="description" content="A base class to share the evaluator and helper methods.">
+      <meta name="description" content="The BaseCommand abstract class is implemented to provide shared functionality across specific command implementations. A common expression evaluator and helper methods are exposed to derived classes to facilitate argument processing.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="BOOSEInterpreter_BaseCommand" data-uid="BOOSEInterpreter.BaseCommand" class="text-break">
-Class BaseCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class BaseCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class BaseCommand  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>BOOSEapp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>A base class to share the evaluator and helper methods.</p>
+  <div class="markdown summary"><p>The BaseCommand abstract class is implemented to provide shared functionality across specific command implementations.
+A common expression evaluator and helper methods are exposed to derived classes to facilitate argument processing.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -162,10 +163,11 @@ Class BaseCommand  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="BOOSEInterpreter_BaseCommand_evaluator" data-uid="BOOSEInterpreter.BaseCommand.evaluator">
   evaluator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A static instance of the ExpressionEvaluator is maintained to ensure consistent expression parsing across all commands.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -197,10 +199,12 @@ Class BaseCommand  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="BOOSEInterpreter_BaseCommand_EvaluateInt_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="BOOSEInterpreter.BaseCommand.EvaluateInt(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
   EvaluateInt(string, Dictionary&lt;string, object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An argument string is evaluated and converted into an integer value.
+The expression evaluator is utilized to resolve variable references or mathematical expressions contained within the argument.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -210,15 +214,18 @@ Class BaseCommand  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>arg</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The argument string is processed.</p>
+</dd>
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The current variable state is referenced during evaluation.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The evaluated result is returned as an integer.</p>
+</dd>
   </dl>
 
 
@@ -235,10 +242,12 @@ Class BaseCommand  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="BOOSEInterpreter_BaseCommand_Execute_BOOSEInterpreter_DrawingCanvas_System_Collections_Generic_Dictionary_System_String_System_Object__System_String___" data-uid="BOOSEInterpreter.BaseCommand.Execute(BOOSEInterpreter.DrawingCanvas,System.Collections.Generic.Dictionary{System.String,System.Object},System.String[])">
   Execute(DrawingCanvas, Dictionary&lt;string, object&gt;, string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The command execution logic is defined by the derived class.
+The method is called to perform the specific action associated with the command using the provided canvas and variable context.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -248,11 +257,14 @@ Class BaseCommand  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <a class="xref" href="BOOSEInterpreter.DrawingCanvas.html">DrawingCanvas</a></dt>
-    <dd></dd>
+    <dd><p>The drawing canvas is targeted for rendering operations.</p>
+</dd>
     <dt><code>variables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The scope of variables is provided for parameter evaluation.</p>
+</dd>
     <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd></dd>
+    <dd><p>The arguments for the command are supplied as a string array.</p>
+</dd>
   </dl>
 
 
@@ -270,7 +282,7 @@ Class BaseCommand  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-JayChotaliya3824/blob/main/BOOSEapp/BaseCommand.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 
